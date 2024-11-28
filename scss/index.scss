@@ -1,4 +1,5 @@
 @use 'base';
+@use './variables/' as *;
 @use 'functions' as *;
 @use 'mixins' as *;
 
@@ -7,21 +8,29 @@
 }
 
 .title-1 {
-  color: get-color('brand', '400');
+  color: get-color(brand, 950);
 }
 
 .title-2 {
-  color: get-color('warning', '600');
+  color: get-color(warning, 50);
 }
 
 .title-3 {
-  color: get-color('error', '500');
+  color: get-color(error, 500);
 }
 
 .title-4 {
-  color: get-color('success', '700');
+  color: get-color(success, 900);
 }
 
 .title-5 {
-  color: get-color('gray', '600');
+  color: get-color(gray, 600);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
